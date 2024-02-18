@@ -1,5 +1,4 @@
 package com.example.cruddemo.AdminModule.Service.SizeService;
-
 import com.example.cruddemo.AdminModule.Entity.SizeCustomize.CustomSizeRes;
 import com.example.cruddemo.AdminModule.Entity.SizeCustomize.SizeEntity;
 import com.example.cruddemo.AdminModule.Entity.SizeCustomize.SizeRequest;
@@ -8,7 +7,6 @@ import com.example.cruddemo.AdminModule.Repository.SizeReposity;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.cruddemo.AdminModule.Mapping.mapSizeEntity;
 import org.springframework.stereotype.Component;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -37,7 +35,7 @@ public class SizeServicelmpl implements ISizeService{
             sizeReposity.save(sizeEntity);
             return new CustomSizeRes("Thêm thành công");
         }
-        return new CustomSizeRes("Thêm thành công");
+        return new CustomSizeRes("Thêm thất bại");
     }
 
     @Override

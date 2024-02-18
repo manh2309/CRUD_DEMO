@@ -16,6 +16,7 @@ public class mapCustomerEntity {
         customer.setDienthoai(customerRequest.getDienthoai());
         return customer;
     }
+    //mapping update
     public static void  mapEntityToRequest (CustomerRequest customerRequest,CustomerEntity customerEntity){
         if(customerRequest != null){
             if(customerRequest.getTenkh() != null && customerRequest.getTenkh().equals(customerEntity.getTenkh()) == false) {
